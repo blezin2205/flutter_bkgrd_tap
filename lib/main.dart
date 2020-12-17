@@ -18,7 +18,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   double _randomOpacity = 1.0;
   Random random = new Random();
-
   Color get randomColor {
     return Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(_randomOpacity);
 }
