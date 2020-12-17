@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(_randomOpacity);
 }
 
-  void _incrementCounter() {
+  void _reloadView() {
     setState(() => _randomOpacity = random.nextDouble() );
     print(_randomOpacity);
   }
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
 
     return GestureDetector(
-      onTap: () => _incrementCounter(),
+      onTap: () => _reloadView(),
       child: Scaffold(
         backgroundColor: randomColor,
         appBar: AppBar(
